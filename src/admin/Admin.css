@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f4f6fb;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.admin-panel {
+  width: 700px;
+  max-width: 95%;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.admin-title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 18px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.admin-input,
+.admin-select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: 0.3s;
+  background: #fff;
+}
+
+.admin-input:focus,
+.admin-select:focus {
+  outline: none;
+  border-color: #06e649;
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.15);
+}
+
+.admin-btn {
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.save-btn {
+  margin-top: 25px;
+  background: linear-gradient(
+    135deg,
+    #06e76b,
+    #ec0566
+  );
+  color: white;
+}
+
+.save-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
+}
+
+.logout-btn {
+  margin-top: 12px;
+  background: #a10303;
+  color: rgb(234, 234, 241);
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}
+
+.login-box {
+  width: 450px;
+  max-width: 95%;
+  margin: 80px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .admin-panel {
+    padding: 25px;
+  }
+
+  .admin-title {
+    font-size: 32px;
+  }
+
+  .admin-btn {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  background: #efefef;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.page {
+  max-width: 1200px;
+  margin: auto;
+  background: white;
+}
+
+.banner {
+  width: 100%;
+  display: block;
+}
+
+.main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.content {
+  flex: 1;
+}
+
+.sidebar {
+  width: 280px;
+}
+
+.sidebar img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.top-box {
+  text-align: center;
+  padding: 15px;
+}
+
+.top-box h2 {
+  color: #111;
+  font-weight: 700;
+}
+
+.top-box h3 {
+  color: #555;
+  font-weight: 700;
+}
+
+.big-number {
+  font-size: 800px;
+  font-weight: 1000;
+  color: #0c0c0c;
+  margin: 40px 0;
+  letter-spacing: 20px;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.result-table td {
+  border: 1px solid #050505;
+  padding: 15px;
+  text-align: center;
+  font-size: 22px;
+  color: #050505;
+  font-weight: 600;
+}
+
+.history-title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #111;
+  font-weight: 700;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-table th,
+.history-table td {
+  border: 1px solid #050505;
+  padding: 10px;
+  text-align: center;
+  color: #555;
+  font-weight: 600;
+}
+
+.history-table th {
+  background: #f8f8f8;
+  color: #333;
+}
+
+footer {
+  background: #a80000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 900px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .big-number {
+    font-size: 55px;
+  }
+
+  .result-table td,
+  .history-table th,
+  .history-table td {
+    font-size: 16px;
+  }
+}
