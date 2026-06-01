@@ -43,19 +43,24 @@ body {
 .top-box h2 {
   color: #111;
   font-weight: 700;
+  font-size: 38px;
 }
 
 .top-box h3 {
   color: #555;
   font-weight: 700;
+  font-size: 28px;
 }
 
+/* เลขใหญ่ */
 .big-number {
-  font-size: 800px;
-  font-weight: 1000;
-  color: #0c0c0c;
-  margin: 40px 0;
-  letter-spacing: 20px;
+  font-size: clamp(70px, 10vw, 140px);
+  font-weight: 900;
+  color: #000;
+  margin: 25px 0;
+  letter-spacing: 15px;
+  line-height: 1;
+  text-align: center;
 }
 
 .result-table {
@@ -79,6 +84,7 @@ body {
   margin-bottom: 20px;
   color: #111;
   font-weight: 700;
+  font-size: 32px;
 }
 
 .history-table {
@@ -93,11 +99,12 @@ body {
   text-align: center;
   color: #555;
   font-weight: 600;
+  font-size: 20px;
 }
 
 .history-table th {
   background: #f8f8f8;
-  color: #333;
+  color: #222;
 }
 
 footer {
@@ -108,9 +115,10 @@ footer {
   margin-top: 30px;
   font-size: 20px;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
+/* Tablet */
 @media (max-width: 900px) {
   .main {
     flex-direction: column;
@@ -121,12 +129,45 @@ footer {
   }
 
   .big-number {
-    font-size: 55px;
+    font-size: 80px;
+    letter-spacing: 10px;
   }
 
   .result-table td,
   .history-table th,
   .history-table td {
     font-size: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .top-box h2 {
+    font-size: 22px;
+  }
+
+  .top-box h3 {
+    font-size: 18px;
+  }
+
+  .big-number {
+    font-size: 65px;
+    letter-spacing: 6px;
+  }
+
+  .history-title {
+    font-size: 24px;
+  }
+
+  .result-table td,
+  .history-table th,
+  .history-table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 16px;
+    padding: 15px;
   }
 }
